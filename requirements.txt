@@ -1,4 +1,5 @@
 streamlit
-cohere
+cohere==4.51
 PyMuPDF
 fpdf
+ 

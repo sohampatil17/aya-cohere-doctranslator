@@ -2,7 +2,6 @@ import cohere
 import fitz
 from fpdf import FPDF
 
-
 class PDF(FPDF):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -58,3 +57,6 @@ def process_pdf(file_path, cohere_api_key):
     output_pdf_path = 'translated_output.pdf'
     save_text_to_pdf(hindi_translation, output_pdf_path)
     return output_pdf_path
+
+
+print(cohere.version)
