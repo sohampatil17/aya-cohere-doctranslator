@@ -59,4 +59,3 @@ def process_pdf(file_path, cohere_api_key):
     return output_pdf_path
 
 
-print(cohere.version)
