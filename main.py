@@ -2,7 +2,6 @@ import cohere
 import fitz
 from fpdf import FPDF
 
-cohere_api = 'U4YiqSDHIkdFIItNWEwLVA7nLQ1aQm2HCyUmdu6h'
 
 class PDF(FPDF):
     def __init__(self, *args, **kwargs):
@@ -27,7 +26,7 @@ def extract_text(pdf_path):
     return text
 
 def aya_translation(input_text, cohere_api_key):
-    co = cohere.Client(cohere_api)  # This is your trial API key
+    co = cohere.Client(cohere_api_key)  # This is your trial API key
     fix_prompt = 'Translate and finish this letter for me in Hindi while maintaining the format in output text:'
     end_prompt = 'Ensure your output translation is in Hindi language'
     response = co.generate(
