@@ -18,7 +18,7 @@ with col2:  # This is the central column
 
 # Proceed with the rest of the layout only if a file has been uploaded
 if uploaded_file is not None:
-    cohere_api_key = 'U4YiqSDHIkdFIItNWEwLVA7nLQ1aQm2HCyUmdu6h'
+    cohere_api_key = ''
 
     # Display the original PDF in the left column
     col1, col2 = st.columns(2)
