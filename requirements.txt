@@ -1,4 +1,4 @@
-streamlit==1.10.0
-cohere==0.0.2
-PyMuPDF==1.19.6
-fpdf==1.7.2
+streamlit
+cohere
+PyMuPDF
+fpdf
